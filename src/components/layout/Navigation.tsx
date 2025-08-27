@@ -172,18 +172,21 @@ export default function Navigation() {
   );
 
   return (
-    <nav className="bg-white shadow-sm border-b">
+    <nav className="bg-black shadow-sm border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">V</span>
-            </div>
-            <span className="text-xl font-bold text-gray-900">
-              VideoPlatform
-            </span>
-          </Link>
+
+{/* Logo */}
+<Link href="/" className="flex items-center space-x-2">
+  <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+    <span className="text-white font-bold text-sm">MT</span>
+  </div>
+  <span className="text-xl font-bold text-white">
+    MyTikTok
+  </span>
+</Link>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">

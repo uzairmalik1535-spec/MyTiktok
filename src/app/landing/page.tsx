@@ -16,8 +16,7 @@ export default function Home() {
             Share Your Videos with the World
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Upload, share, and discover amazing videos. Join our community of
-            creators and viewers from around the world.
+            Upload, share, and discover amazing videos. 
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

@@ -7,6 +7,9 @@ import { revalidatePath } from "next/cache";
 import { getVideos as getVideosQuery } from "@/lib/db/queries/videos";
 import { auth } from "@/auth";
 
+
+
+
 export async function createVideo({
   title,
   description,
@@ -209,3 +212,6 @@ export async function getVideos(limit = 20, cursor?: Date) {
     };
   }
 }
+
+
+

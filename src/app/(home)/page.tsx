@@ -15,14 +15,20 @@ export default async function HomePage() {
 
   const { videos, nextCursor, hasNextPage } = result;
 
+  // Only show videos uploaded after 27 Aug 2025, 9 PM
+  const cutoffDate = new Date("2025-08-27T13:00:00");
+  const filteredVideos = videos.filter(
+    (video) => new Date(video.createdAt) > cutoffDate
+  );
+
   return (
-    <div className="h-[calc(100vh-66px)] bg-gray-100 py-3">
-      {videos.length === 0 ? (
+    <div className="h-[calc(100vh-66px)] bg-gradient-to-br from-black via-gray-900 to-purple-900 py-6">
+      {filteredVideos.length === 0 ? (
         <div className="flex items-center justify-center h-screen">
-          <div className="bg-white rounded-lg shadow-md p-8 text-center max-w-md mx-4">
-            <div className="text-gray-500 mb-4">
+          <div className="bg-gradient-to-br from-purple-700 to-indigo-900 rounded-xl shadow-2xl p-10 text-center max-w-md mx-4 border border-purple-500">
+            <div className="text-purple-200 mb-4">
               <svg
-                className="mx-auto h-12 w-12 text-gray-400"
+                className="mx-auto h-14 w-14 text-purple-300"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -35,17 +41,17 @@ export default async function HomePage() {
                 />
               </svg>
             </div>
-            <h3 className="text-lg font-medium text-gray-900 mb-2">
+            <h3 className="text-2xl font-bold text-white mb-2 drop-shadow">
               No videos yet
             </h3>
-            <p className="text-gray-500">
+            <p className="text-purple-200">
               Be the first to upload a video and share it with the world!
             </p>
             {session && (
-              <div className="mt-4">
+              <div className="mt-6">
                 <Link
                   href="/upload"
-                  className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700"
+                  className="inline-flex items-center px-5 py-2 border border-transparent text-base font-semibold rounded-lg shadow-lg text-white bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 transition"
                 >
                   Upload Your First Video
                 </Link>
@@ -56,7 +62,7 @@ export default async function HomePage() {
       ) : (
         <Suspense fallback={<></>}>
           <VideoFeed
-            videos={videos}
+            videos={filteredVideos}
             nextCursor={nextCursor}
             hasNextPage={hasNextPage}
           />

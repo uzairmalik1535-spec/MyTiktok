@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b1964fa1-c341-4a5b-b793-421da1f437ca/resourceGroups/appsvc_linux_eastus2/providers/Microsoft.Web/sites/MyTiktok",
+    "appService.deploySubpath": "."
+}
