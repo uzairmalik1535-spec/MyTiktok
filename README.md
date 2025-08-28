@@ -218,3 +218,4 @@ npm run db:studio        # Open Drizzle Studio
 ---
 
 **Happy coding! 🚀**
+# redeploy
