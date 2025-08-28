@@ -2,13 +2,13 @@
   "/favicon.ico/route": "/favicon.ico",
   "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
   "/api/upload/route": "/api/upload",
-  "/_not-found/page": "/_not-found",
   "/auth/signup/page": "/auth/signup",
-  "/auth/verify-email/page": "/auth/verify-email",
-  "/auth/signin/page": "/auth/signin",
-  "/landing/page": "/landing",
-  "/liked-videos/page": "/liked-videos",
+  "/_not-found/page": "/_not-found",
   "/(home)/page": "/",
+  "/auth/signin/page": "/auth/signin",
+  "/liked-videos/page": "/liked-videos",
+  "/auth/verify-email/page": "/auth/verify-email",
+  "/landing/page": "/landing",
   "/upload/page": "/upload",
   "/videos-management/page": "/videos-management"
 }

@@ -2,13 +2,13 @@
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/api/upload/route": "app/api/upload/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/auth/signup/page": "app/auth/signup/page.js",
-  "/auth/verify-email/page": "app/auth/verify-email/page.js",
-  "/auth/signin/page": "app/auth/signin/page.js",
-  "/landing/page": "app/landing/page.js",
-  "/liked-videos/page": "app/liked-videos/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/(home)/page": "app/(home)/page.js",
+  "/auth/signin/page": "app/auth/signin/page.js",
+  "/liked-videos/page": "app/liked-videos/page.js",
+  "/auth/verify-email/page": "app/auth/verify-email/page.js",
+  "/landing/page": "app/landing/page.js",
   "/upload/page": "app/upload/page.js",
   "/videos-management/page": "app/videos-management/page.js"
 }
