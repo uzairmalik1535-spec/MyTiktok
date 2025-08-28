@@ -1,0 +1,14 @@
+{
+  "/favicon.ico/route": "/favicon.ico",
+  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/api/upload/route": "/api/upload",
+  "/_not-found/page": "/_not-found",
+  "/auth/signup/page": "/auth/signup",
+  "/auth/verify-email/page": "/auth/verify-email",
+  "/auth/signin/page": "/auth/signin",
+  "/landing/page": "/landing",
+  "/liked-videos/page": "/liked-videos",
+  "/(home)/page": "/",
+  "/upload/page": "/upload",
+  "/videos-management/page": "/videos-management"
+}
